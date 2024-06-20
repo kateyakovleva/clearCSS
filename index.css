@@ -1,0 +1,140 @@
+.u-body {
+	background-color: #3f3f3f;
+	font-family: "Inter", sans-serif;
+}
+
+.w-100 {
+	width: 100%;
+}
+
+.w-63 {
+	width: 63%;
+}
+
+.u-main-container {
+	display: flex;
+	width: 100%;
+	height: 100vh;
+}
+
+.u-reletive {
+	position: relative;
+}
+
+.u-section-1 {
+	width: 743px;
+	height: 91px;
+	border-radius: 10px;
+	background-color: #3579F5;
+	padding: 20px;
+}
+
+.u-container {
+	display: flex;
+}
+
+.u-content-column {
+	flex-direction: column;
+	align-content: space-between;
+}
+
+.u-align-center {
+	align-items: center;
+}
+
+.u-align-start {
+	align-items: start;
+}
+
+.u-justify-center {
+	justify-content: center;
+}
+
+.u-justify-tween {
+	justify-content: space-between;
+}
+
+.u-title {
+	width: 76px;
+	height: 18px;
+	background-color: #2364DB;
+	color: #ffffff;
+	border-radius: 40px;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 18px;
+}
+
+.u-h1 {
+	color: #ffffff;
+	font-size: 15px;
+	font-weight: 600;
+	line-height: 20px;
+	margin: 0;
+}
+
+.u-h2 {
+	color: #ffffff;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 18px;
+	margin: 0;
+}
+
+.u-btn {
+	border: none;
+	background-color: #F4F8FF;
+	padding: 10px 32px;
+	border-radius: 6px;
+	color: #4777ED;
+	font-weight: 400;
+	font-size: 14px;
+}
+
+:root {
+	--progress-value: 80%;
+}
+
+.u-progress-text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 20px;
+	font-weight: 400;
+	color: #ffffff;
+}
+
+.u-progress-bar {
+	width: 60px;
+	height: 60px;
+}
+
+.u-progress-bar .u-progress-bar-1 {
+	fill: transparent;
+	stroke: #ffffff;
+	opacity: .6;
+	stroke-width: 2px;
+}
+
+.u-progress-bar .u-progress-bar-2 {
+	fill: transparent;
+	stroke: #ffffff;
+	stroke-width: 3px;
+	stroke-dasharray: calc(var(--progress-value) * 2.85), 1000;
+	stroke-linejoin: round;
+	stroke-linecap: round;
+	stroke-dashoffset: 0;
+	transition: stroke-dasharray 2s linear;
+	animation: circle-bar 2s linear;
+}
+
+@keyframes circle-bar {
+	0% {
+		stroke-dasharray: 0, 1000;
+	}
+	100% {
+		stroke-dasharray: calc(var(--progress-value) * 2.85), 1000;
+	}
+}
+
